@@ -1,0 +1,37 @@
+Do Not allow your lines to be longer than the line of "=" characters.
+========================================================================
+1.  Problems observed in play Without the Debugger (I found 3)
+Does not give the user an additional card
+Does not calculate winning correctly
+Won't let the user quite playing 
+========================================================================
+2.  Problems seen in memory using the Debugger  (I found 9)
+    Specify the line number and what is wrong with the memory value
+  1. Line:  210 while loop condition is not updated the loop
+  2.line 39 local variable amountOfCurrentBet prevents property from getting a value
+  3. Line 85 should return 10
+  4. Line 145 should be || not &&
+  5.line 155 sames as 4
+  6.
+  7.
+  8.
+  9.
+
+========================================================================
+3.  Problems fixed: Line number and new code. 
+Line 210 added userWantsToPlay = reply =='y' || reply == 'y';
+Line 39: removed "int" from amountOfCurrentBet
+Line 85:Now returns 10 instead of card-10
+Line 145 & 155: userWantsACard now used|| properly
+Line 174: adds to userWins now to properly display wins 
+
+     
+========================================================================
+4. What was the hardest part of this lab for you and why was it hard?
+
+Debugging can be a difficult process because it take a lot of time and
+patience to find and fix errors in code
+it requires a deep understanding of the code and the system it is running on.
+
+
+
